@@ -1,515 +1,313 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<!----CSS--------------------------------------->
-    <link rel="stylesheet" href="style.css?=v120520231303">
-<!----Title------------------------------------->
-    <title> cafe d'italia </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café d'Italia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-    <div class="slideshow-container">
+<body>
 
-<!----Slideshow--------------------------------->
-        <div class="mySlides fade">
-          <img src="Foto/beans.jpg" style="width: 100%;" height="125%">
+  <!-- ====== NAV ====== -->
+  <header class="header-navigate">
+    <div class="logo-nav">
+      <img src="Foto/coffee-7-xxl.png" class="nav-icon" alt="logo" onerror="this.style.display='none'">
+      <span>IL CAFÉ D'ITALIA</span>
+    </div>
+    <nav class="navbar" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#info">Info</a>
+      <a href="#history">History</a>
+      <a href="#categories">Categories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="slideshow-bg">
+      <div class="mySlides"><img src="Foto/beans.jpg" alt="Coffee beans" onerror="this.parentElement.style.background='#3b1a07'"></div>
+      <div class="mySlides"><img src="Foto/coffeecup.png" alt="Coffee cup" onerror="this.parentElement.style.background='#3b1a07'"></div>
+      <div class="mySlides"><img src="Foto/lattte good.png" alt="Latte" onerror="this.parentElement.style.background='#3b1a07'"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">Benvenuti</p>
+      <h1 class="hero-title">IL CAFÉ D'ITALIA</h1>
+      <p class="hero-tagline">Where every cup tells a story</p>
+      <a href="#info" class="hero-btn">Discover More</a>
+    </div>
+    <div class="slide-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- ====== INTRO ====== -->
+  <section class="intro-section" id="info">
+    <div class="intro-inner">
+      <div class="intro-text">
+        <p class="section-label">Our Philosophy</p>
+        <h2 class="intro-heading">ITALIAN COFFEE<br>IS A DELIGHT</h2>
+        <p>Known for its rich flavors and smooth textures, Italian coffee has captivated coffee lovers worldwide. From the iconic espresso to the creamy cappuccino, Italian coffee offers a sensory experience like no other.</p>
+        <p>Join us on a journey to discover the essence of Italian coffee culture and indulge in the authentic flavors that will transport you to the streets of Rome or the cafes of Milan.</p>
+      </div>
+      <div class="intro-image">
+        <div class="intro-img-frame">
+          <img src="Foto/coffeecup.png" alt="Coffee cup" onerror="this.style.opacity='0'">
         </div>
-        
-        <div class="mySlides fade">
-          <img src="Foto/coffeecup.png" style="width: 100%;" height="125%">
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MARQUEE ====== -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <!-- duplicate set for seamless loop -->
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+      <img src="Foto/cup3.png" alt=""><img src="Foto/cup2.jpg" alt=""><img src="Foto/cup1.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- ====== HISTORY BANNER ====== -->
+  <section class="history-banner" id="history">
+    <div class="history-banner-inner">
+      <p class="section-label">Explore</p>
+      <h2>History of Coffee</h2>
+      <p class="history-sub">Origin, Types &amp; Facts</p>
+    </div>
+  </section>
+
+  <!-- ====== INFO CARDS ====== -->
+  <section class="cards-section">
+    <div class="cards-grid">
+
+      <div class="product">
+        <div class="product-card" onclick="openPopup(0)">
+          <img src="Foto/coffee-map.jpg" class="product-img" alt="Coffee map" onerror="this.style.display='none'">
+          <div class="card-footer">
+            <h2 class="name">Beans</h2>
+            <button class="popup-btn">Read More</button>
+          </div>
         </div>
-        
-        <div class="mySlides fade">
-          <img src="Foto/lattte good.png" style="width: 100%;" height="125%">
+        <div class="popup-view" id="popup-0">
+          <div class="popup-card">
+            <button class="close-btn" onclick="closePopup(0)">&times;</button>
+            <div class="popup-img"><img src="Foto/coffee-map.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="info">
+              <h2>Beans<br><span>Kinds of beans used in Italian coffee</span></h2>
+              <p>Italian coffee beans have a rich and diverse origin story. The two primary types used in Italy are Arabica and Robusta.</p>
+              <p>Arabica beans are known for their mild and aromatic flavors, cultivated in high-altitude regions of South and Central America. Robusta beans have a bold flavor and are grown in Africa and Southeast Asia.</p>
+              <p>Italy's coffee culture has perfected the art of blending these beans to achieve a unique taste profile, resulting in the beloved espresso.</p>
+            </div>
+          </div>
         </div>
-        
+      </div>
+
+      <div class="product">
+        <div class="product-card" onclick="openPopup(1)">
+          <img src="Foto/History-of-coffee-scaled.jpg" class="product-img" alt="History" onerror="this.style.display='none'">
+          <div class="card-footer">
+            <h2 class="name">History</h2>
+            <button class="popup-btn">Read More</button>
+          </div>
         </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
+        <div class="popup-view" id="popup-1">
+          <div class="popup-card">
+            <button class="close-btn" onclick="closePopup(1)">&times;</button>
+            <div class="popup-img"><img src="Foto/History-of-coffee-scaled.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="info">
+              <h2>History<br><span>The origin of coffee arriving in Italy</span></h2>
+              <p>The history of Italian coffee dates back to the 16th century. Coffee first arrived in Venice, brought by traders from the Middle East, and quickly spread throughout the Italian peninsula.</p>
+              <p>The coffeehouse became popular for intellectual discussions and social gatherings. Italy's influence reached its zenith with the development of espresso in the early 20th century.</p>
+              <p>Iconic cafes like Caffè Florian in Venice and Caffè Greco in Rome became renowned for their historical significance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-card" onclick="openPopup(2)">
+          <img src="Foto/coffee-etiquette-around-the-world.jpg" class="product-img" alt="Etiquette" onerror="this.style.display='none'">
+          <div class="card-footer">
+            <h2 class="name">Etiquette</h2>
+            <button class="popup-btn">Read More</button>
+          </div>
+        </div>
+        <div class="popup-view" id="popup-2">
+          <div class="popup-card">
+            <button class="close-btn" onclick="closePopup(2)">&times;</button>
+            <div class="popup-img"><img src="Foto/coffee-etiquette-around-the-world.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="info">
+              <h2>Etiquette<br><span>Rules and ethics of Italian coffee culture</span></h2>
+              <p>Italian coffee culture is steeped in traditions. One fundamental rule: never order a cappuccino after 11 a.m. — it's considered a morning beverage only.</p>
+              <p>It's customary to drink espresso quickly while standing at the bar. Tipping is not obligatory, as the service charge is often included.</p>
+              <p>Italians prioritize high-quality freshly roasted beans with a consistent grind — ensuring every cup is a sensory delight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== CAROUSEL ====== -->
+  <section class="categories-section" id="categories">
+    <div class="categories-header">
+      <p class="section-label">Our Menu</p>
+      <h2>Coffee Varieties</h2>
+    </div>
+    <div class="containerrr">
+      <div class="slide" id="coffeeSlide">
+
+        <div class="item">
+          <img src="Foto/elcafe1.png" alt="Espresso" onerror="this.style.display='none'">
+          <div class="content">
+            <div class="c-name">Espresso</div>
+            <div class="c-des">Served in a tiny cup throughout the day. Order <em>un caffè</em>, not <em>un espresso</em>. Try caffè corretto — espresso "corrected" with grappa, sambucca, or cognac.</div>
+            <a href="https://youtu.be/lVeNTofDB2k?t=133" target="_blank" rel="noopener"><button class="video-btn">&#9654; Watch Tutorial</button></a>
+          </div>
         </div>
 
-        
-<!--javascript for automatic slideshow--------------->
-        <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        <div class="item">
+          <img src="Foto/elcafe2.webp" alt="Cappuccino" onerror="this.style.display='none'">
+          <div class="content">
+            <div class="c-name">Cappuccino</div>
+            <div class="c-des">Italy's most famous coffee. Italians consider it a meal itself and won't drink one after 11am — but you're welcome to enjoy one any time.</div>
+            <a href="https://youtu.be/lVeNTofDB2k?t=870" target="_blank" rel="noopener"><button class="video-btn">&#9654; Watch Tutorial</button></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Foto/elcafe3.webp" alt="Macchiato" onerror="this.style.display='none'">
+          <div class="content">
+            <div class="c-name">Macchiato</div>
+            <div class="c-des">An espresso with a drop or two of hot milk, served in the same tiny cup. Not as milky as a cappuccino — acceptable any time of day.</div>
+            <a href="https://youtu.be/lVeNTofDB2k?t=1022" target="_blank" rel="noopener"><button class="video-btn">&#9654; Watch Tutorial</button></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Foto/elcafe4.jpg" alt="Marocchino" onerror="this.style.display='none'">
+          <div class="content">
+            <div class="c-name">Marocchino</div>
+            <div class="c-des">Espresso, a layer of foam, and cacao powder in a glass dusted with cocoa. In Northern Italy, thick hot chocolate is mixed with the espresso before the foam.</div>
+            <a href="https://youtu.be/xV8wB5VB8Yw?t=3" target="_blank" rel="noopener"><button class="video-btn">&#9654; Watch Tutorial</button></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Foto/elcafe5.jpg" alt="Caffe Latte" onerror="this.style.display='none'">
+          <div class="content">
+            <div class="c-name">Caffè Latte</div>
+            <div class="c-des">⅓ espresso, ⅔ heated milk, and a little foam. Order just "latte" in Italy and you might receive plain milk! Only before 11am, like a cappuccino.</div>
+            <a href="https://youtu.be/lVeNTofDB2k?t=1104" target="_blank" rel="noopener"><button class="video-btn">&#9654; Watch Tutorial</button></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Foto/elcafe6.webp" alt="Shakerato" onerror="this.style.display='none'">
+          <div class="content">
+            <div class="c-name">Shakerato</div>
+            <div class="c-des">Italy's answer to iced coffee — chilled espresso shaken over ice. On a hot day, nothing is quite as refreshing and it's perfectly fine before 11am.</div>
+            <a href="https://youtu.be/lVeNTofDB2k?t=1407" target="_blank" rel="noopener"><button class="video-btn">&#9654; Watch Tutorial</button></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-buttons">
+        <button class="prev-btn" onclick="slidePrev()" aria-label="Previous">&#8592;</button>
+        <button class="next-btn" onclick="slideNext()" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="Foto/coffee-7-xxl.png" alt="logo" onerror="this.style.display='none'">
+        <h3>IL CAFÉ D'ITALIA</h3>
+        <p>Passion &amp; tradition in every cup.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#info">Info</a>
+        <a href="#history">History</a>
+        <a href="#categories">Categories</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>&#128205; Via del Caffè, Roma, Italia</p>
+        <p>&#9993; info@caffeditalia.it</p>
+        <p>&#128222; +39 06 1234567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2023 Il Café d'Italia &mdash; Made by Sally Al Cheickh Abdullah</p>
+      <nav>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/contact">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // SLIDESHOW
+    (function () {
+      var idx = 0;
+      var slides = document.getElementsByClassName('mySlides');
+      var dots   = document.getElementsByClassName('dot');
+      function show() {
+        if (!slides.length) return;
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+          if (dots[i]) dots[i].classList.remove('active');
         }
-        </script>
+        if (idx >= slides.length) idx = 0;
+        slides[idx].style.display = 'block';
+        if (dots[idx]) dots[idx].classList.add('active');
+        idx++;
+        setTimeout(show, 3500);
+      }
+      show();
+    })();
 
+    // POPUPS
+    function openPopup(i)  { var p = document.getElementById('popup-' + i); if (p) p.classList.add('active'); }
+    function closePopup(i) { var p = document.getElementById('popup-' + i); if (p) p.classList.remove('active'); }
+    document.querySelectorAll('.popup-view').forEach(function (el) {
+      el.addEventListener('click', function (e) { if (e.target === el) el.classList.remove('active'); });
+    });
 
-        <!-- <div class="mark">
-            <img src="Foto/made-in-italy.webp" alt="made-in-italy">
-        </div>-->
+    // CAROUSEL
+    function slideNext() {
+      var s = document.getElementById('coffeeSlide');
+      var items = s.querySelectorAll('.item');
+      if (items.length) s.appendChild(items[0]);
+    }
+    function slidePrev() {
+      var s = document.getElementById('coffeeSlide');
+      var items = s.querySelectorAll('.item');
+      if (items.length) s.prepend(items[items.length - 1]);
+    }
+  </script>
 
-        <div class="box">
-            <h1 class="heading"> IL CAFE D'ITALIA</h1> 
-        </div>
-
-        <div class="icon">
-            <img src="Foto/coffee-7-xxl.png" class="iconpic">
-        </div>
-
-
-      <header class="header">
-        <!-- <a href="#" class="logo">IL CAFE D'ITALIA</a> -->
-
-        <nav class="navbar">
-          <a href="#">Home</a>
-          <a href="#">Info</a>
-          <a href="#">History</a>
-          <a href="#">Categories</a>
-          <a href="#">Contact</a> 
-        </nav>
-      </header>
-
-
-<!--inleiding homwpage welcoming---------------------->
-        <div class="box2">
-          <h2 class="introw" id=""> ITALIAN COFFEE IS A DELIGHT!</h2>
-        </div>
-
-       <div class="box3">
-          <p>
-            Known for its rich flavors and smooth textures, Italian coffee has 
-            captivated coffee lovers worldwide. From the iconic espresso to the 
-            creamy cappuccino, Italian coffee offers a sensory experience like no 
-            other.<br><br>Join us on a journey to discover the essence of Italian coffee 
-            culture and indulge in the authentic flavors that will transport you to 
-            the streets of Rome or the cafes of Milan. Get ready to savor the passion
-            and tradition that make Italian coffee truly special.
-          </p>
-        </div>
-
-        <div class="nn" id="Info">
-          <p>.</p>
-        </div>
-
-
-<!--marquee automatic infinite slide box--------------->
-        <div class="position-relative marquee-container d-none d-sm-block">
-          <div class="marquee d-flex justify-content-around">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-          </div>
-
-          <div class="marquee marquee2 d-flex justify-content-around">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-          </div>
-        </div>
-
-<!--ANOTHER ONE------------------------------>
-        <div class="position-relative markee-containerr d-none d-sm-block">
-          <div class="markee d-flex justify-content-around">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-          </div>
-
-          <div class="markee markee2 d-flex justify-content-around">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-            <img src="Foto/cup3.png">
-            <img src="Foto/cup2.jpg">
-            <img src="Foto/cup1.jpg">
-          </div>
-        </div>
-
-
-
-
-      <div class="information">
-          <div class="boxcard">
-            <p>History of coffee-</p>
-            <p2>Origin,Types<br>&Facts</p2>
-          </div>
-      </div>
-
-      <div class="boxin">
-        <h1 class="headingin"> IL CAFE D'ITALIA</h1>
-      </div>
-      
-      <div class="iconin">
-        <img src="Foto/coffee-7-xxl.png" class="iconpicin">
-      </div>
-
-
-
-
-
-      <div class="container">
-        <div class="product">
-          <div class="product-card">
-            <h2 class="name">Beans</h2>              <span class="tag"></span>
-            <a class="popup-btn">Read more</a>
-            <img src="Foto/coffee-map.jpg" class="product-img" alt="">
-          </div>
-          <div class="popup-view">
-            <div class="popup-card">
-              <a><i class="fas fa-times close-btn">x</i></a>                <div class="product-img">
-                <img src="Foto/coffee-map.jpg" alt="">
-              </div>
-              <div class="info">
-                <h2>Beans<br><span>Kinds of beans used in italian coffee</span></h2>
-                <p>Italian coffee beans have a rich and diverse origin story. The two primary 
-                    types of coffee beans commonly used in Italy are Arabica and Robusta.<br><br>
-                    Arabica beans are known for their mild and aromatic flavors, primarily
-                    cultivated in the high-altitude regions of South and Central America. 
-                    In contrast, Robusta beans are noted for their bold, robust flavor 
-                    and are often grown in Africa and Southeast Asia.<br><br> Italy's coffee 
-                    culture has perfected the art of blending these beans to achieve 
-                    a unique taste profile, resulting in the beloved espresso. 
-                    The careful selection of coffee beans and the meticulous roasting 
-                    process are integral to the renowned Italian coffee tradition, contributing 
-                    to its worldwide popularity.
-                  </p>
-                  <span class="price"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!---->
-          <div class="product">
-            <div class="product-card">
-              <h2 class="name">History</h2>
-              <span class="tag"></span>
-              <a class="popup-btn">Read more</a>
-              <img src="Foto/History-of-coffee-scaled.jpg" class="product-img" alt="">
-            </div>
-            <div class="popup-view">
-              <div class="popup-card">
-                <a><i class="fas fa-times close-btn">x</i></a>
-                <div class="product-img">
-                  <img src="Foto/History-of-coffee-scaled.jpg" alt="">
-                </div>
-                <div class="info">
-                  <h2>History<br><span>The origin and history of coffe first arriving in Italy</span></h2>
-                  <p>The history of Italian coffee is a captivating journey that dates 
-                    back to the 16th century.<br><br>Coffee first arrived in Venice, brought by 
-                    traders from the Middle East, and quickly spread throughout the Italian 
-                    peninsula. The concept of the coffeehouse, known as the "café," became 
-                    popular, providing a space for intellectual discussions, social gatherings,
-                    and the enjoyment of this new beverage. Italy's influence on coffee culture
-                     reached its zenith with the development of espresso in the early 20th century. 
-                     <br><br> Concentrated coffee brewing method soon became an integral part of 
-                      Italian daily life, and iconic cafes like Caffè Florian in Venice and Caffè 
-                      Greco in Rome became renowned for their historical significance. Today, 
-                      Italian coffee culture continues to thrive, with espresso serving as a 
-                      symbol of Italy's passion for the art of coffee.
-                  </p>
-                  <span class="price"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <div class="product">
-            <div class="product-card">
-              <h2 class="name">Etiquette</h2>
-              <span class="tag"></span>
-              <a class="popup-btn">Read more</a>
-              <img src="Foto/coffee-etiquette-around-the-world.jpg" class="product-img" alt="">
-            </div>
-            <div class="popup-view">
-              <div class="popup-card">
-                <a><i class="fas fa-times close-btn">x</i></a>
-                <div class="product-img">
-                  <img src="Foto/coffee-etiquette-around-the-world.jpg" alt="">
-                </div>
-                <div class="info">
-                  <h2>Etiquette<br><span>Rules and ethics of Italian coffee culture</span></h2>
-                  <p>Italian coffee culture is steeped in traditions and etiquette. One of the 
-                    fundamental rules is to never order a cappuccino after 11 a.m., as it's 
-                    considered a morning beverage.<br><br>It's also customary to drink espresso quickly 
-                    while standing at the bar, rather than sitting at a table. Tipping is not 
-                    obligatory, as the service charge is often included in the bill. Ethically, 
-                    Italians take their coffee seriously, emphasizing quality and taste. 
-                    <br><br>They prioritize the use of high-quality, freshly roasted beans and advocate 
-                    for a consistent grind and precise brewing. This commitment to excellence 
-                    ensures that every cup of Italian coffee is a sensory delight, showcasing 
-                    the nation's devotion to preserving its coffee heritage.
-                  </p>
-                  <span class="price"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-       <script type="text/javascript">
-        var popupViews = document.querySelectorAll('.popup-view');
-        var popupBtns = document.querySelectorAll('.popup-btn');
-        var closeBtns = document.querySelectorAll('.close-btn');
-    
-        //javascript for quick view button
-        var popup = function(popupClick){
-          popupViews[popupClick].classList.add('active');
-        }
-    
-        popupBtns.forEach((popupBtn, i) => {
-          popupBtn.addEventListener("click", () => {
-            popup(i);
-          });
-        });
-    
-        //javascript for close button
-        closeBtns.forEach((closeBtn) => {
-          closeBtn.addEventListener("click", () => {
-            popupViews.forEach((popupView) => {
-              popupView.classList.remove('active');
-            });
-          });
-        });
-        </script>
-
-
-
-        <!-- <div class="conteiner">
-          <div id="slidee">
-
-            <div class="item" style="background-image: url(foto/beans.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe2.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe3.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe4.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe5.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe2.webp);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe7.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-
-            <div class="item" style="background-image: url(foto/elcafe8.jpg);">
-              <div class="content">
-                <div class="name">espresso</div>
-                <div class="des">idk what to write yet and i am stressed</div>
-                <button>see more</button>
-              </div>
-            </div>
-            <div class="buttons">
-              <buttons class="prev" id="prev">back</buttons>
-              <buttons class="next" id="next">next</buttons>
-            </div>
-
-          </div>
-        </div> -->
-
-
-        <!--new code trial -->
-     
-     <div class="containerrr">
- 
-         <div class="slide">
- 
-             
-             <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
-                 <div class="content">
-                     <div class="name">Switzerland</div>
-                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                     <button>See More</button>
-                 </div>
-             </div>
-             <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
-                 <div class="content">
-                     <div class="name">Finland</div>
-                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                     <button>See More</button>
-                 </div>
-             </div>
-             <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
-                 <div class="content">
-                     <div class="name">Iceland</div>
-                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                     <button>See More</button>
-                 </div>
-             </div>
-             <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
-                 <div class="content">
-                     <div class="name">Australia</div>
-                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                     <button>See More</button>
-                 </div>
-             </div>
-             <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
-                 <div class="content">
-                     <div class="name">Netherland</div>
-                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                     <button>See More</button>
-                 </div>
-             </div>
-             <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
-                 <div class="content">
-                     <div class="name">Ireland</div>
-                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                     <button>See More</button>
-                 </div>
-             </div>
- 
-         </div>
- 
-         <div class="button">
-             <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-             <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
-         </div>
- 
-     </div>
-     
-
-     <script>
-       let next = document.querySelector('.next')
-       let prev = document.querySelector('.prev')
-
-        next.addEventListener('click', function(){
-        let items = document.querySelectorAll('.item')
-        document.querySelector('.slide').appendChild(items[0])
-       })
-
-       prev.addEventListener('click', function(){
-       let items = document.querySelectorAll('.item')
-       document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-       })
-     </script>
-
-
-
-      <script src="js/script.js" type="text/javascript"></script>
-   </body>
-</html> 
+</body>
+</html>
